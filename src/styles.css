@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
+
+@theme {
+  /* fonts */
+  --font-popps: 'Poppins', sans-serif;
+  --font-montserrat: 'Montserrat', system-ui, sans-serif;
+  --font-camera: 'CameraObscura', serif;
+
+  /* colors */
+  /* --color-primary: #1c8da3;
+  --color-secondary: #0a353d;
+  --color-bg: #c2ecf5; */
+}
+
+@layer components {
+  /* section heading */
+  .sec-heading {
+    @apply text-center mt-8 mb-7 text-[30px] md:text-[40px] font-popps;
+  }
+
+  .sec-heading-gradient {
+    @apply bg-clip-text text-transparent bg-linear-to-r from-[#0a353d] to-[#1c8da3];
+  }
+
+  /*process*/
+  .process-heading {
+    @apply ml-4 mt-6 font-popps text-[#4F4F4F];
+  }
+
+  .process-img-circle {
+    @apply rounded-full w-8.75 h-8.75 mt-4 ml-7;
+  }
+
+  .process-img {
+    @apply mx-auto my-2.5 w-4 h-4;
+  }
+
+  .process-para {
+    @apply px-9 py-2 pb-3 font-popps leading-relaxed text-[14px] md:text-[15px] text-[#4B4B4B];
+  }
+
+  /*product*/
+  .product-heading {
+    @apply font-popps text-[#4F4F4F] text-[28px] text-center mt-5 lg:text-left lg:mt-0;
+  }
+
+  .product-underline {
+    @apply h-1 w-16.75 bg-linear-to-r from-[#0a353d] to-[#1c8da3] rounded-full my-4 mx-auto lg:mx-0;
+  }
+
+  .product-para {
+    @apply mt-4 font-popps text-[#4F4F4F] text-[15.5px] sm:text-[16px] text-center lg:text-left leading-loose;
+  }
+
+  /*buttons*/
+  .btn {
+    @apply inline-flex px-6 py-2 pb-0 font-popps text-white bg-linear-to-r from-[#0a353d] to-[#1c8da3] rounded-md;
+  }
+
+  .btn-animation {
+    @apply order-2 ml-5 my-auto  duration-500  -translate-x-3;
+  }
+
+  /*images*/
+  .img-animation {
+    @apply rounded-tl-[150px] rounded-tr-[150px] rounded-bl-[40px] rounded-br-[40px] h-64 w-112.5 hover:scale-125 transition-all duration-1000;
+  }
+
+  .img-div {
+    @apply overflow-hidden rounded-tl-[150px] rounded-tr-[150px] rounded-bl-[40px] rounded-br-[40px] h-64 w-112.5 scale-75 md:scale-90 lg:scale-100 mx-auto drop-shadow-[0_12px_16px_rgba(255,162,76,0.29)];
+  }
+
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-linear-to-r from-[#0a353d] to-[#1c8da3] leading-loose;
+  }
+
+  .product-page-para {
+    @apply text-center text-[#4F4F4F] font-popps text-[15.5px] sm:text-[16px] leading-loose;
+  }
+
+  /*table*/
+  /* table {
+    @apply border-separate border-spacing-0 w-full rounded-lg shadow-lg;
+  }
+
+  th:not(:last-child),
+  td:not(:last-child) {
+    @apply border-r-0;
+  }
+
+  tr:not(:last-child) td,
+  th {
+    @apply border-b-0;
+  }
+
+  tr:first-child th:first-child {
+    @apply rounded-tl-lg;
+  }
+
+  tr:first-child th:last-child {
+    @apply rounded-tr-lg;
+  }
+
+  tr:last-child td:first-child {
+    @apply rounded-bl-lg;
+  }
+
+  tr:last-child td:last-child {
+    @apply rounded-br-lg;
+  } */
+}
+
+.mat-expansion-panel {
+  margin-bottom: 12px !important;
+}
+
+:root {
+  --primary-color: #1c8da3;
+  --secondary-color: #4c5758;
+  --bg-color: #e9f8fb;
+  /* --bg-color: #c2ecf5; */
+}
+
+/*  theme color (dark - light) 
+    - 0A353D 
+    - 1C8DA3 
+    - 25BCDA 
+    - C2ECF5 
+    - E9F8FB
+*/
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
