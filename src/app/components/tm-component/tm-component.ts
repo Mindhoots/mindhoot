@@ -4,11 +4,12 @@ import { CarouselComponent } from '../../shared/carousel-component/carousel-comp
 import { PricingComponent } from '../pricing-component/pricing-component';
 import { FaqComponent } from '../faq-component/faq-component';
 import { CommonModule } from '@angular/common';
-import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InputComponent } from '../../shared/input-component/input-component';
 
 @Component({
   selector: 'app-tm-component',
-  imports: [MatButtonToggleModule, CarouselComponent, PricingComponent, FaqComponent, CommonModule, ReactiveFormsModule, FormsModule],
+  imports: [MatButtonToggleModule, CarouselComponent, PricingComponent, FaqComponent, CommonModule, ReactiveFormsModule, FormsModule, InputComponent],
   templateUrl: './tm-component.html',
   styleUrl: './tm-component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -27,7 +28,7 @@ export class TmComponent {
     mobileNo: [''],
     companySize: [''],
     jobTitle: [''],
-    description: [''],
+    enquiry: [''],
   })
 
   onSubmitForm() {
