@@ -1,6 +1,7 @@
 <div class="bg-[#EDF7FF] font-ibm px-12">
   <!--  hero section -->
   <section class="pt-80 pb-40 mx-auto flex justify-center items-center">
+
     <div class="w-fit">
       <h1 class="text-9xl">WORK</h1>
       <h1 class="text-9xl">MANAGER</h1>
@@ -28,19 +29,18 @@
         src="assets/images/screenshots/task-screen.png"
         alt="task-screen"
       />
-
       <img
         class="absolute w-150 h-80 rounded-xl shadow-xl"
         src="assets/images/screenshots/project-memebers.png"
         alt="projects-screen"
       />
-
       <img
         class="absolute left-2 top-0 w-150 h-80 rounded-xl shadow-xl"
         src="assets/images/screenshots/dashboard.png"
         alt="dashboard-screen"
-      />
+        />
     </div>
+
   </section>
 
   <!-- overview -->
@@ -61,7 +61,7 @@
       <div
         class="h-90 w-100 hover:scale-105 transition-transform duration-300 rounded-xl shadow-xl bg-white"
       >
-        <img
+      <img
           class="rounded-tl-xl rounded-tr-xl shadow-2xs"
           src="assets/images/screenshots/dashboard.png"
           alt="dashboard"
@@ -87,7 +87,7 @@
       <div
         class="h-90 w-100 hover:scale-105 transition-transform duration-300 rounded-xl shadow-xl bg-white"
       >
-        <img
+      <img
           class="rounded-tl-xl rounded-tr-xl"
           src="assets/images/screenshots/dashboard.png"
           alt="dashboard"
@@ -219,11 +219,16 @@
       <app-contact-component></app-contact-component>
       <br />
       <p class="text-center">
-        By submitting this form, I accept mindhoot <span class="sec-heading-gradient cursor-pointer hover:underline" (click)="openDialog()">Privacy Policy</span> and consent to be contacted by
-        mindhoot.com for marketing and promotional purposes via email, phone, SMS, and other means
+        By submitting this form, I accept mindhoot
+        <span class="sec-heading-gradient cursor-pointer hover:underline" (click)="openDialog()"
+          >Privacy Policy</span
+        >
+        and consent to be contacted by mindhoot.com for marketing and promotional purposes via
+        email, phone, SMS, and other means
       </p>
     </div>
   </section>
+
 </div>
 
 <app-footer-component></app-footer-component>
