@@ -8,7 +8,7 @@ Run the Angular build command with the proper base-href and output path:
 ```
 ng build --output-path docs --base-href /website/
 ```
-> [!Notes]
+> [!Note]
 `--output-path docs` ensures the build files go into the docs folder, which GitHub Pages uses.
 `--base-href /website/` ensures all relative URLs in the app point to the correct path for the repository.
 
