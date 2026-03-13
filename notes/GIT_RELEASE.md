@@ -56,4 +56,5 @@ https://.github.io/website/
 Then deploy with:
 npm run deploy
 
-> Note: `Always clear your browser cache or use incognito mode to test updates`.
+> [!IMPORTANT]
+> `Always clear your browser cache or use incognito mode to test updates`.
