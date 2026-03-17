@@ -56,8 +56,9 @@
     <h2 class="sec-heading"><span class="sec-heading-gradient">OUR SERVICES</span></h2>
     <div class="container mx-auto px-6 lg:px-2">
       <div class="grid lg:grid-cols-3 lg:gap-5">
-        <div class="w-full rounded-xl h-auto sm:h-50 shadow-[0_20px_40px_rgba(0,0,0,0.12)] bg-opacity-30 border-0 mt-2">
-        
+        <div
+          class="w-full rounded-xl h-auto sm:h-50 shadow-[0_20px_40px_rgba(0,0,0,0.12)] bg-opacity-30 border-0 mt-2"
+        >
           <div class="flex justify-start">
             <div class="bg-[#ff818152] process-img-circle">
               <img src="./assets/images" alt="software development" class="process-img" />
@@ -74,7 +75,9 @@
           </p>
         </div>
 
-        <div class="w-full rounded-xl h-auto sm:h-50 shadow-[0_20px_40px_rgba(0,0,0,0.12)] bg-opacity-30 border-0 mt-2">
+        <div
+          class="w-full rounded-xl h-auto sm:h-50 shadow-[0_20px_40px_rgba(0,0,0,0.12)] bg-opacity-30 border-0 mt-2"
+        >
           <div class="flex">
             <div class="bg-[#FFEBA654] process-img-circle">
               <img src="./assets/images" alt="it consultancy" class="process-img" />
@@ -89,7 +92,9 @@
         </div>
 
         <!-- <div class="w-full rounded-xl h-auto sm:h-50 shadow-lg bg-opacity-30 border-solid border-2 border-[#EDF7FF] mt-2"> -->
-        <div class="w-full rounded-xl h-auto sm:h-50 mt-2 bg-white/10 backdrop-blur-2xl border border-white/20 shadow-[0_20px_40px_rgba(0,0,0,0.12)]">
+        <div
+          class="w-full rounded-xl h-auto sm:h-50 mt-2 bg-white/10 backdrop-blur-2xl border border-white/20 shadow-[0_20px_40px_rgba(0,0,0,0.12)]"
+        >
           <div class="flex">
             <div class="bg-[#85FC9854] process-img-circle">
               <img src="./assets/images" alt="devops" class="process-img" />
@@ -109,7 +114,7 @@
   </section>
 
   <!-- Stacks -->
-  <section id="products" class="pt-16">
+  <section id="stacks" class="pt-16">
     <h2 class="sec-heading"><span class="sec-heading-gradient">OUR EXPERTISE</span></h2>
     <div
       class="container mx-auto py-10 grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-6 md:gap-10 lg:gap-10 place-items-center px-10"
@@ -121,85 +126,29 @@
   </section>
 
   <!-- products -->
-  <section id="products" class="pt-16">
+  <section id="products" class="py-16">
     <h2 class="sec-heading"><span class="sec-heading-gradient">OUR PRODUCTS</span></h2>
-    <div class="container mx-auto py-10 px-4">
-      <div class="flex flex-wrap">
-        <div class="justify-center w-full lg:w-1/2 lg:order-1 order-2 h-70">
-          <h1 class="product-heading">Work Manager</h1>
-          <hr class="product-underline" />
-          <p class="product-para">
-            <span class="sec-heading-gradient">Work Manager</span> is a smart workflow management
-            application designed to help businesses organize tasks, track progress, and collaborate
-            efficiently. It streamlines daily operations, improves team coordination, and boosts
-            productivity by keeping everyone focused on what matters most.
-          </p>
-
-          <div
-            routerLink="/task-manager"
-            class="mt-3 text-center lg:text-left btn group"
-            (click)="onProjectClicked('task-manager')"
-          >
-            <div class="btn-animation group-hover:translate-x-1 ease">
-              <i class="material-icons">trending_flat</i>
-            </div>
-            Know More
-          </div>
-        </div>
-
-        <div class="w-full order-1 lg:w-1/2">
-          <app-carousel-component></app-carousel-component>
-        </div>
-
-        <!-- <div class="w-full order-1 lg:w-1/2">
-        <div class="flex justify-center">
-          <div class="img-div lg:mr-0">
-            <img src="./assets/images" alt="ihram_hajj" class="img-animation" />
-          </div>
-        </div>
-      </div> -->
+    <div class="w-full px-4 py-10 h-100 flex flex-wrap justify-center items-center">
+      <div class="h-100 w-2/5 flex-order-1 flex flex-col justify-center">
+        <h1 class="product-heading">Work Manager</h1>
+        <hr class="product-underline" />
+        <p class="product-para">
+          <span class="sec-heading-gradient">Work Manager</span> is a smart workflow management
+          application designed to help businesses organize tasks, track progress, and collaborate
+          efficiently. It streamlines daily operations, improves team coordination, and boosts
+          productivity by keeping everyone focused on what matters most.
+        </p>
+        <div routerLink="/task-manager" class="mt-3 text-center lg:text-left btn group w-1/4" (click)="onProjectClicked('task-manager')">
+          <div class="btn-animation group-hover:translate-x-1 ease">
+            <i class="material-icons">trending_flat</i>
+          </div>Know More</div>
+      </div>
+      <div class="h-100 w-2/5 flex-order-1">
+        <img src="assets/images/one-platform.png" class="w-full flex shrink-0 object-scale-down" />
       </div>
     </div>
+
   </section>
-
-  <!--contact-->
-  <!-- <section id="contact" class="pt-16">
-  <h2 class="sec-heading"><span class="sec-heading-gradient">CONTACT US</span></h2>
-  <div class="container mx-auto px-6 pt-3 lg:px-2">
-    <div class="grid lg:grid-cols-2 py-16 font-Montserrat text-[#4F4F4F]">
-      <div class="w-full pt-8 lg:pt-0 lg:px-32 sm:px-0">
-        <div class="flex">
-          <i class="material-icons text-[#1C8DA3] pl-1">mail</i>
-          <a href="mailto:info@texcottonindia.com" class="pl-2 leading-5 lg:text-lg hover:underline"
-            >mindhoot@gmail.com</a
-          >
-        </div>
-
-        <div class="flex lg:pt-10 pt-11">
-          <i class="material-icons text-[#1C8DA3] pl-1">phone_iphone</i>
-          <a href="tel:+918148138001" class="pl-2 leading-5 lg:text-lg hover:underline"
-            >Mobile: +91-8148138001</a
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-  <!-- <section id="contact" class="pt-16">
-  <div class="bg-black text-white">
-    <div class="flex flex-col justify-center w-full pt-8 lg:pt-0 lg:px-32 sm:px-0">
-      <div>  
-        <i class="material-icons text-[#1C8DA3] pl-1">mail</i>
-        <a href="mailto:info@texcottonindia.com" class="pl-2 leading-5 lg:text-lg hover:underline">mindhoot@gmail.com</a>
-      </div>
-      <div>
-        <i class="material-icons text-[#1C8DA3] pl-1">phone_iphone</i>
-        <a href="tel:+918148138001" class="pl-2 leading-5 lg:text-lg hover:underline">Mobile: +91-8148138001</a>
-      </div>
-    </div>
-  </div>
-</section> -->
 </div>
 
 <!-- footer -->

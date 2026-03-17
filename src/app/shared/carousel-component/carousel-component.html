@@ -1,11 +1,11 @@
-<div class="relative w-full max-w-3xl h-70 mx-auto overflow-hidden " (mouseenter)="stopAutoSlide()" (mouseleave)="startAutoSlide()">
+<div class="relative w-full max-w-3xl mx-auto overflow-hidden" (mouseenter)="stopAutoSlide()" (mouseleave)="startAutoSlide()">
   <!-- Images -->
   <div
     class="flex transition-transform duration-700 ease-in-out"
     [style.transform]="'translateX(-' + currentIdx * 100 + '%)'"
   >
     @for (img of images; track img) {
-      <img [src]="img" class="w-full flex shrink-0 object-contain h-64 md:h-96" />
+      <img [src]="img" class="w-full flex shrink-0 object-scale-down h-64 md:h-96" />
     }
   </div>
 

@@ -9,9 +9,9 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 export class CarouselComponent implements OnInit, OnDestroy {
 
   images = [
-    "assets/images/screenshots/dashboard.png",
-    "assets/images/screenshots/project-memebers.png",
-    "assets/images/screenshots/task-screen.png",
+    "assets/images/reports.png",
+    "assets/images/notifications.png",
+    "assets/images/one-platform.png",
   ];
 
   currentIdx = 0;

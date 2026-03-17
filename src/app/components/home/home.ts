@@ -6,7 +6,7 @@ import { CarouselComponent } from '../../shared/carousel-component/carousel-comp
 
 @Component({
   selector: 'app-home',
-  imports: [FooterComponent, NavBarComponent, CarouselComponent],
+  imports: [FooterComponent, NavBarComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
